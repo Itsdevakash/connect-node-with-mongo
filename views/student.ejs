@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Node JS</title>
+    </head>
+    <body>
+    <center> <h1>Data will be here</h1> </center>   
+
+    <table border="1" width="100%">
+        <tr style="text-align: center;">
+            <th>Name</th>
+            <th>Age</th>
+            <th>Email</th>
+        </tr>
+       <% result.forEach(student=>{ %>
+ <tr style="text-align: center;">
+            <td><%= student.name %></td>
+            <td><%= student.age %></td>
+            <td><%=student.email %></td>
+        </tr>
+      <% }) %>
+       
+    </table>
+    </body>
+</html>

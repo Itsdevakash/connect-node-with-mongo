@@ -10,12 +10,14 @@
             <th>Name</th>
             <th>Age</th>
             <th>Email</th>
+            <th>Delete</th>
         </tr>
        <% result.forEach(student=>{ %>
  <tr style="text-align: center;">
             <td><%= student.name %></td>
             <td><%= student.age %></td>
             <td><%=student.email %></td>
+            <td><a href="/delete/<%= student._id %>">Delete</a></td>
         </tr>
       <% }) %>
        

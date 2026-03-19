@@ -1,0 +1,21 @@
+  
+  
+  <form method="post" action="/update/<%= result._id %>">
+  <div class="container">
+    <h1>Update Students</h1>
+    <hr>
+
+    <label><b>Name</b></label><br>
+    <input type="text" placeholder="Enter Name" value="<%=  result.name %>" name="name" > <br><br>
+
+    <label ><b>Email</b></label><br>
+    <input type="text" placeholder="Enter Email"  value="<%=  result.email %>" name="email" ><br><br>
+
+  <label ><b>Age</b></label><br>
+    <input type="number" placeholder="Enter Age"   value="<%=  result.age %>" name="age" ><br><br>
+
+    <hr>
+  <br>
+    <button class="registerbtn">Submit</button>
+  </div>
+</form>
